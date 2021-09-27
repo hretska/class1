@@ -122,13 +122,15 @@ body {
   text-align: center;
 }
 
-.container .one div, .container .two div, .container .three div {
-  padding-top: 5px;
+.container .one .recipe, .container .one .kins, .container .one .drinks, .container .two .recipe, .container .two .kins, .container .two .drinks, .container .three .recipe, .container .three .kins, .container .three .drinks {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33% 33% 33%;
+      grid-template-columns: 33% 33% 33%;
 }
 
-.container .one div .r1, .container .one div .r2, .container .one div .r3, .container .one div .k1, .container .one div .k2, .container .one div .k3, .container .one div .d1, .container .one div .d2, .container .one div .d3, .container .two div .r1, .container .two div .r2, .container .two div .r3, .container .two div .k1, .container .two div .k2, .container .two div .k3, .container .two div .d1, .container .two div .d2, .container .two div .d3, .container .three div .r1, .container .three div .r2, .container .three div .r3, .container .three div .k1, .container .three div .k2, .container .three div .k3, .container .three div .d1, .container .three div .d2, .container .three div .d3 {
-  width: 30%;
-  position: absolute;
+.container .one div, .container .two div, .container .three div {
+  padding-top: 5px;
 }
 
 .container .one div .r1 h1, .container .one div .r2 h1, .container .one div .r3 h1, .container .one div .k1 h1, .container .one div .k2 h1, .container .one div .k3 h1, .container .one div .d1 h1, .container .one div .d2 h1, .container .one div .d3 h1, .container .two div .r1 h1, .container .two div .r2 h1, .container .two div .r3 h1, .container .two div .k1 h1, .container .two div .k2 h1, .container .two div .k3 h1, .container .two div .d1 h1, .container .two div .d2 h1, .container .two div .d3 h1, .container .three div .r1 h1, .container .three div .r2 h1, .container .three div .r3 h1, .container .three div .k1 h1, .container .three div .k2 h1, .container .three div .k3 h1, .container .three div .d1 h1, .container .three div .d2 h1, .container .three div .d3 h1 {
@@ -146,14 +148,6 @@ body {
 .container .one div .r1 img, .container .one div .r2 img, .container .one div .r3 img, .container .one div .k1 img, .container .one div .k2 img, .container .one div .k3 img, .container .one div .d1 img, .container .one div .d2 img, .container .one div .d3 img, .container .two div .r1 img, .container .two div .r2 img, .container .two div .r3 img, .container .two div .k1 img, .container .two div .k2 img, .container .two div .k3 img, .container .two div .d1 img, .container .two div .d2 img, .container .two div .d3 img, .container .three div .r1 img, .container .three div .r2 img, .container .three div .r3 img, .container .three div .k1 img, .container .three div .k2 img, .container .three div .k3 img, .container .three div .d1 img, .container .three div .d2 img, .container .three div .d3 img {
   margin-left: 5%;
   width: 70%;
-}
-
-.container .one div .r2, .container .one div .k2, .container .one div .d2, .container .two div .r2, .container .two div .k2, .container .two div .d2, .container .three div .r2, .container .three div .k2, .container .three div .d2 {
-  margin-left: 33%;
-}
-
-.container .one div .r3, .container .one div .k3, .container .one div .d3, .container .two div .r3, .container .two div .k3, .container .two div .d3, .container .three div .r3, .container .three div .k3, .container .three div .d3 {
-  margin-left: 66%;
 }
 
 .one {

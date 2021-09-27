@@ -141,12 +141,13 @@ body{
         font-size: 1em;
         text-transform: uppercase;
         text-align: center;
+        .recipe, .kins, .drinks{
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+        }
         div{
             padding-top: 5px;
             .r1, .r2, .r3, .k1, .k2, .k3, .d1, .d2, .d3{
-          
-                width: 30%;
-                position: absolute;
 
                 h1{
                     
@@ -169,12 +170,7 @@ body{
                     
                 }
             }
-            .r2, .k2, .d2{
-                margin-left: 33%;
-            }
-            .r3, .k3, .d3{
-                margin-left: 66%;
-            }
+
 
         }
 
