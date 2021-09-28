@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Century Gothic, sans-serif;
+}
+
+section {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  scroll-snap-align: start;
+}
+
+.container {
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.one {
+  background: #dfeaf3;
+}
+
+.one .top {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-color: #8fbc8f;
+  width: 100%;
+  height: 10vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.2em;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.one .top p {
+  position: absolute;
+  left: 2%;
+  top: 25%;
+  font-weight: bold;
+}
+
+.one .top p a {
+  color: black;
+}
+
+.one .top nav {
+  position: absolute;
+  top: 25%;
+  right: 2%;
+  font-weight: bold;
+}
+
+.one .top nav a {
+  color: white;
+}
+
+.one .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.one .about .img {
+  margin-top: 20px;
+}
+
+.one .about .card {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #F8F8FF;
+  padding: 20px;
+  margin: 5%;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 10px 30px rgba(131, 169, 180, 0.2);
+          box-shadow: 0 10px 30px rgba(131, 169, 180, 0.2);
+  height: 60vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.one .about .card .list li {
+  display: inline;
+}
+
+.one .about .card .list a {
+  padding: 2em;
+}
+
+.btn {
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.5em;
+  cursor: pointer;
+  font-weight: bold;
+  border: 2px solid white;
+}
+
+.shop-item-btn:hover {
+  background-color: #ababb1;
+}
+
+.two {
+  background: #e7d6ce;
+  border-bottom: 1px solid white;
+}
+
+.three {
+  background: #ece2d5;
+  border-bottom: 1px solid white;
+}
+
+.four {
+  background: #c0c6cc;
+  border-bottom: 1px solid white;
+}
+
+.five {
+  background: #8fbc8f;
+  border-bottom: 1px solid white;
+}
+
+.tab .cart {
+  background: #F8F8FF;
+  padding: 20px;
+  margin-top: 60px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 10px 30px rgba(131, 169, 180, 0.8);
+          box-shadow: 0 10px 30px rgba(131, 169, 180, 0.8);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.tab .cart .cart-title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.tab .cart .cart-header {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #8fbc8f;
+  margin-top: 20px;
+}
+
+.tab .cart .cart-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid black;
+  margin-right: 1em;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.tab .cart .cart-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tab .cart .cart-row:last-child {
+  border-bottom: 1px solid black;
+}
+
+.tab .cart .cart-row:last-child .cart-column {
+  border: none;
+}
+
+.tab .cart .cart-item {
+  width: 45%;
+}
+
+.tab .cart .cart-price {
+  width: 20%;
+  font-size: 1.2em;
+  color: black;
+}
+
+.tab .cart .cart-quantity {
+  width: 35%;
+}
+
+.tab .cart .cart-quantity-input {
+  height: 34px;
+  width: 50px;
+  border-radius: 5px;
+  border: 1px solid #8fbc8f;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 15px;
+}
+
+.tab .cart .cart-item-title {
+  color: black;
+  margin-left: 0.5em;
+  font-size: 1.2em;
+}
+
+.tab .cart .cart-item-image {
+  width: 50px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.tab .cart .btn-danger {
+  color: white;
+  background-color: #974b41;
+  border: none;
+  border-radius: 0.3em;
+  font-weight: bold;
+}
+
+.tab .cart .btn-danger:hover {
+  background-color: #55241d;
+}
+
+.tab .cart .cart-total {
+  text-align: end;
+  padding: 15px;
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tab .cart .cart-total-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: black;
+  margin-right: 20px;
+}
+
+.tab .cart .cart-total-price {
+  color: black;
+  font-size: 1.1em;
+}
+
+.tab .cart .btn-purchase {
+  display: block;
+  margin: 5px 25px 5px auto;
+  color: white;
+  background-color: #8fbc8f;
+  border: none;
+  border-radius: 0.3em;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.tab .cart .btn-purchase:hover {
+  background-color: #608660;
+}
+
+.container-goods {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 1.5em;
+}
+
+.shop-item {
+  margin: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.shop-item-title {
+  margin-top: 30px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.shop-item-image {
+  -webkit-box-shadow: 0 10px 30px rgba(131, 169, 180, 0.2);
+          box-shadow: 0 10px 30px rgba(131, 169, 180, 0.2);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shop-item-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+}
+
+.shop-item-price {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+/*# sourceMappingURL=main3.css.map */
