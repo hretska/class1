@@ -112,10 +112,6 @@ body {
   padding: 15px;
 }
 
-.container section {
-  height: 100vh;
-}
-
 .container .one, .container .two, .container .three {
   font-size: 1em;
   text-transform: uppercase;
